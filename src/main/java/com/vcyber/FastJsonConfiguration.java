@@ -38,7 +38,7 @@ public class FastJsonConfiguration extends WebMvcConfigurerAdapter
                 SerializerFeature.WriteNullStringAsEmpty
 
         );
-        //解决中午乱码
+        //解决中文乱码
         List<MediaType> fastMediaTypes = new ArrayList<>();
         fastMediaTypes.add(MediaType.APPLICATION_JSON_UTF8);
         fastConverter.setSupportedMediaTypes(fastMediaTypes);
