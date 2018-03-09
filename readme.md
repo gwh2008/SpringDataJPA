@@ -3,7 +3,7 @@ https://github.com/gaowenhui/SpringDataJPA
 
 SpringBoot实战项目 ，
 集成了SpringDataJPA实现CRUD、 分页、自定义sql、事务、Logback、Druid、FastJson、
- Rest请求，自定义HttpResponseBody返回体
+ Rest请求、自定义HttpResponseBody返回体、swagger2、@Scheduled定时任务
 
 
 
@@ -16,5 +16,7 @@ SpringBoot实战项目 ，
 自定义查询    http://127.0.0.1:8080/age?uAge=20
 
 分页查询测试  http://127.0.0.1:8080/cutpage?page=1
+
+swagger2文档   http://localhost:8080/swagger-ui.html
 
 

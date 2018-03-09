@@ -5,6 +5,9 @@ import com.vcyber.user.jpa.UserJPA;
 import com.vcyber.user.util.HttpMessageVO;
 import com.vcyber.user.util.JWT;
 import com.vcyber.user.util.ResponseData;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -98,10 +101,17 @@ public class UserController{
      * 模拟rest接口请求，
      * 参数可以放到header或者body里，
      * 返回ResponseData会自动解析成json格式的数据
+     *  @ApiImplicitParam注解中的paramType 有五个可选值 ： path, query, body, header, form
      * @param
      * @return
      */
     @PostMapping("/login")
+    @ApiOperation(value="模拟rest接口请求", notes="参数可以放到header或者body里,返回ResponseData会自动解析成json格式的数据",produces = "application/json")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "username", value = "用户名", required = true, dataType = "String",paramType = "header"),
+            @ApiImplicitParam(name = "password", value = "密码", required = true, dataType = "String",paramType = "header"),
+            @ApiImplicitParam(name = "json", value = "json", required = true, dataType = "String",paramType = "body")
+    })
     @ResponseBody
     public ResponseData login(@RequestHeader String username, @RequestHeader String password, @RequestBody String json) {
 
