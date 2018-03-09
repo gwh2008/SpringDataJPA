@@ -32,6 +32,31 @@ public class UserController{
     @Autowired
     private UserJPA userJPA;
 
+    /**
+     * 注：@GetMapping("/{id}")是spring 4.3的新注解等价于：
+     * @RequestMapping(value = "/id", method = RequestMethod.GET)
+     * 类似的注解还有@PostMapping等等
+     * http://127.0.0.1:8080/1    rest方式
+     * @param id
+     * @return user信息
+     */
+    @GetMapping("/{id}")
+    public UserEntity findById(@PathVariable Long id) {
+        UserEntity findOne = this.userJPA.findOne(id);
+        return findOne;
+    }
+    /**
+     * 添加、更新用户方法
+     * @param entity
+     * http://localhost:8080/save?name=admin&age=22&address=jinan3
+     * @return
+     */
+    @RequestMapping(value = "/save",method = RequestMethod.GET)
+    public UserEntity save(UserEntity entity)
+    {
+        return userJPA.save(entity);
+    }
+
     @RequestMapping(value = "/list")
     public List<UserEntity> list()
     {
