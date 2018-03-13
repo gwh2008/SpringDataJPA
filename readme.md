@@ -7,15 +7,15 @@ SpringBoot实战项目 ，
 
 
 
-查询列表      http://127.0.0.1:8080/list
+查询列表(分页)      http://127.0.0.1:8080/list
 
 添加          http://127.0.0.1:8080/add
 
 删除          http://127.0.0.1:8080/delete?userId=1
 
-自定义查询    http://127.0.0.1:8080/age?uAge=20
+自定义查询    http://127.0.0.1:8080/vcyber/age?uAge=20
 
-分页查询测试  http://127.0.0.1:8080/cutpage?page=1
+分页查询测试  http://127.0.0.1:8080/vcyber/cutpage?page=1
 
 swagger2文档   http://localhost:8080/swagger-ui.html
 

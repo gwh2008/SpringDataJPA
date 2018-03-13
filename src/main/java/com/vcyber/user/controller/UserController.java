@@ -11,11 +11,18 @@ import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.convert.converter.Converter;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.ui.Model;
 
+import java.util.Iterator;
 import java.util.List;
+
+import  org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 
 /**
  * ========================
@@ -25,6 +32,7 @@ import java.util.List;
  * ========================
  */
 @RestController
+@RequestMapping("/vcyber")
 public class UserController{
     //logback
     private final static Logger logger = LoggerFactory.getLogger(UserController.class);
@@ -86,6 +94,7 @@ public class UserController{
     public List<UserEntity> age(int uAge){
         return userJPA.nativeQuery(uAge);
     }
+
 
     /**
      * 根据条件自定义编写删除SQL

@@ -28,4 +28,9 @@ public interface UserJPA extends BaseRepository<UserEntity,Long>
     @Modifying
     @Query(value = "delete from t_user where t_name = ?1 and t_pwd = ?2",nativeQuery = true)
     public void deleteQuery(String name,String pwd);
+
+    @Query(value = "select * from t_user order by t_id  limit  ?1 , ? 2 ",nativeQuery = true)
+    public List<UserEntity> pageQuery(int start , int row);
+
+
 }
