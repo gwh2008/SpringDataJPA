@@ -1,9 +1,7 @@
 package com.vcyber.user.entity;
 
 import com.vcyber.user.base.BaseEntity;
-
 import javax.persistence.*;
-import java.io.Serializable;
 
 /**
  * ========================
