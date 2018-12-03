@@ -28,10 +28,10 @@ public class PrintTask {
 
     /**
      * 每小时的10分执行该方法
-     * “15/5 * * * * ?” 每分钟的每2秒开始触发，每隔1秒触发一次
+     * “15/5 * * * * ?” 每分钟的每1秒开始触发，每隔2秒触发一次
      */
 //    @Scheduled(cron = "0 10 * * * *")
-    @Scheduled(cron = "2/1 * * * * ?")
+    @Scheduled(cron = "1/2 * * * * ?")
     public void cron() throws Exception
     {
         System.out.println("执行测试cron时间："+ new Date(System.currentTimeMillis()));
