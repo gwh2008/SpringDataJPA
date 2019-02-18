@@ -1,7 +1,6 @@
 package com.vcyber.user.controller;
 
 import com.vcyber.user.entity.User;
-import com.vcyber.user.entity.UserEntity;
 import com.vcyber.user.service.UserService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 @Controller
 public class User2Controller {
