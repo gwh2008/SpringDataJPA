@@ -1,5 +1,8 @@
 package com.vcyber.user.task;
 
+import com.vcyber.user.service.impl.UserServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
@@ -19,6 +22,9 @@ import java.util.Date;
 @Component
 //public class PrintTask implements DisposableBean {
 public class PrintTask {
+
+    private final static Logger logger = LoggerFactory.getLogger(PrintTask.class);
+
 //    @Override
 //    public void destroy() throws Exception {
 //        //关闭线程或线程池
@@ -34,6 +40,7 @@ public class PrintTask {
     @Scheduled(cron = "1/2 * * * * ?")
     public void cron() throws Exception
     {
+        logger.info("执行测试cron时间："+ new Date(System.currentTimeMillis()));
         System.out.println("执行测试cron时间："+ new Date(System.currentTimeMillis()));
     }
 
@@ -69,6 +76,7 @@ public class PrintTask {
     public void fixedDelay() throws Exception
     {
         Thread.sleep(3000);
+        logger.info("执行测试fixedDelay时间："+ new Date(System.currentTimeMillis()));
         System.out.println("执行测试fixedDelay时间："+ new Date(System.currentTimeMillis()));
     }
 
@@ -78,6 +86,7 @@ public class PrintTask {
     @Scheduled(initialDelay = 1000 * 10,fixedDelay = 1000 * 2)
     public void initialDelay() throws Exception
     {
+        logger.info("执行测试initialDelay时间："+ new Date(System.currentTimeMillis()));
         System.out.println("执行测试initialDelay时间："+ new Date(System.currentTimeMillis()));
     }
 
