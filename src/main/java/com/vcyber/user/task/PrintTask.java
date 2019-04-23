@@ -1,6 +1,8 @@
 package com.vcyber.user.task;
 
+import org.springframework.beans.factory.DisposableBean;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -15,13 +17,21 @@ import java.util.Date;
  */
 
 @Component
+//public class PrintTask implements DisposableBean {
 public class PrintTask {
-
+//    @Override
+//    public void destroy() throws Exception {
+//        //关闭线程或线程池
+//        ThreadPoolTaskScheduler scheduler = (ThreadPoolTaskScheduler)applicationContext.getBean("scheduler");
+//        scheduler.shutdown();
+//    }
 
     /**
      * 每小时的10分执行该方法
+     * “15/5 * * * * ?” 每分钟的每2秒开始触发，每隔1秒触发一次
      */
-    @Scheduled(cron = "0 10 * * * *")
+//    @Scheduled(cron = "0 10 * * * *")
+    @Scheduled(cron = "2/1 * * * * ?")
     public void cron() throws Exception
     {
         System.out.println("执行测试cron时间："+ new Date(System.currentTimeMillis()));

@@ -1,4 +1,5 @@
 
+
 https://github.com/gaowenhui/SpringDataJPA
 
 SpringBoot实战项目 ，
@@ -19,4 +20,10 @@ SpringBoot实战项目 ，
 
 swagger2文档   http://localhost:8080/swagger-ui.html
 
+附截图2张：
+
+![Image text](https://github.com/gaowenhui/SpringDataJPA/blob/master/src/screenshots/20180313153024.png)
+
+
+![Image text](https://github.com/gaowenhui/SpringDataJPA/blob/master/src/screenshots/20180313153441.png)
 

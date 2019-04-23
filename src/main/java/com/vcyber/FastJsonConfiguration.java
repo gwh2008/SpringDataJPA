@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +37,7 @@ public class FastJsonConfiguration extends WebMvcConfigurerAdapter
                 SerializerFeature.WriteNullStringAsEmpty
 
         );
-        //解决中午乱码
+        //解决中文乱码
         List<MediaType> fastMediaTypes = new ArrayList<>();
         fastMediaTypes.add(MediaType.APPLICATION_JSON_UTF8);
         fastConverter.setSupportedMediaTypes(fastMediaTypes);
