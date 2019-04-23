@@ -1,24 +1,31 @@
 package com.vcyber.user.entity;
 
 import com.vcyber.user.base.BaseEntity;
-
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import javax.persistence.*;
 import com.vcyber.user.base.BaseEntity;
 
+@Setter
+@Getter
+@ToString
+@EqualsAndHashCode
 @Entity
 @Table(name = "user")
 public class User extends BaseEntity {
     @Id
     @GeneratedValue
     private long id;
+
     @Column(nullable = false, unique = true)
-
     private String userName;
-    @Column(nullable = false)
 
+    @Column(nullable = false)
     private String password;
-    @Column(nullable = false)
 
+    @Column(nullable = false)
     private int age;
 
     public long getId() {

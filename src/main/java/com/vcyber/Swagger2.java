@@ -13,7 +13,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 /**
  * @author gaowh
  * @Description
- * @date 2018-2-6 12:12:31
+ * @date 2019-2-6 12:12:31
  */
 @Configuration
 public class Swagger2 {

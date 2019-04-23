@@ -1,7 +1,10 @@
 package com.vcyber.user.entity;
 
 import com.vcyber.user.base.BaseEntity;
-
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -14,6 +17,10 @@ import java.io.Serializable;
  *
  * ========================
  */
+@Setter
+@Getter
+@ToString
+@EqualsAndHashCode
 @Entity
 @Table(name = "t_user")
 public class UserEntity extends BaseEntity
