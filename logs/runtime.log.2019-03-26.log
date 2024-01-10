@@ -1,0 +1,78 @@
+2019-03-26 15:58:03.440 [restartedMain] ERROR o.s.boot.logging.LoggingApplicationListener - Cannot set level: on for 'com.vcyber.user.controller'
+2019-03-26 15:58:03.543 [restartedMain] INFO  com.vcyber.UserApplication - Starting UserApplication on gaowh with PID 11288 (E:\morefun\SpringDataJPA\target\classes started by vcyber in E:\morefun\SpringDataJPA)
+2019-03-26 15:58:03.544 [restartedMain] INFO  com.vcyber.UserApplication - No active profile set, falling back to default profiles: default
+2019-03-26 15:58:03.922 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e7599eb: startup date [Tue Mar 26 15:58:03 CST 2019]; root of context hierarchy
+2019-03-26 15:58:03.934 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+2019-03-26 15:58:08.164 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$87229b02] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-03-26 15:58:08.510 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-03-26 15:58:08.536 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2019-03-26 15:58:08.537 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-03-26 15:58:08.619 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-03-26 15:58:08.620 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4698 ms
+2019-03-26 15:58:08.787 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-03-26 15:58:08.792 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-26 15:58:08.793 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-26 15:58:08.793 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-26 15:58:08.793 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-26 15:58:08.974 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-03-26 15:58:09.284 [restartedMain] INFO  o.springframework.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/E:/morefun/SpringDataJPA/target/classes/schema.sql]
+2019-03-26 15:58:09.472 [restartedMain] INFO  o.springframework.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/E:/morefun/SpringDataJPA/target/classes/schema.sql] in 187 ms.
+2019-03-26 15:58:09.474 [restartedMain] INFO  o.springframework.jdbc.datasource.init.ScriptUtils - Executing SQL script from URL [file:/E:/morefun/SpringDataJPA/target/classes/data.sql]
+2019-03-26 15:58:09.519 [restartedMain] INFO  o.springframework.jdbc.datasource.init.ScriptUtils - Executed SQL script from URL [file:/E:/morefun/SpringDataJPA/target/classes/data.sql] in 45 ms.
+2019-03-26 15:58:09.657 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-03-26 15:58:09.669 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-03-26 15:58:09.784 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2019-03-26 15:58:09.786 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-03-26 15:58:09.787 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2019-03-26 15:58:09.844 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-03-26 15:58:10.105 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-03-26 15:58:10.510 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-03-26 15:58:11.290 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.vcyber.user.controller.HelloController.hello(org.springframework.ui.Model,java.lang.String)
+2019-03-26 15:58:11.292 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String com.vcyber.user.controller.User2Controller.index()
+2019-03-26 15:58:11.292 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/add]}" onto public java.lang.String com.vcyber.user.controller.User2Controller.add(com.vcyber.user.entity.User)
+2019-03-26 15:58:11.292 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/delete/{id}]}" onto public java.lang.String com.vcyber.user.controller.User2Controller.delete(java.lang.Long)
+2019-03-26 15:58:11.292 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/list],methods=[GET]}" onto public java.lang.String com.vcyber.user.controller.User2Controller.list(org.springframework.ui.Model,org.springframework.data.domain.Pageable)
+2019-03-26 15:58:11.293 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/toAdd]}" onto public java.lang.String com.vcyber.user.controller.User2Controller.toAdd()
+2019-03-26 15:58:11.293 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/toEdit/{id}]}" onto public java.lang.String com.vcyber.user.controller.User2Controller.toEdit(org.springframework.ui.Model,java.lang.Long)
+2019-03-26 15:58:11.293 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/edit]}" onto public java.lang.String com.vcyber.user.controller.User2Controller.edit(com.vcyber.user.entity.User)
+2019-03-26 15:58:11.297 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vcyber/add]}" onto public java.lang.String com.vcyber.user.controller.UserController.add()
+2019-03-26 15:58:11.297 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vcyber/delete]}" onto public java.lang.String com.vcyber.user.controller.UserController.delete(java.lang.Long)
+2019-03-26 15:58:11.298 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vcyber/list]}" onto public java.util.List<com.vcyber.user.entity.UserEntity> com.vcyber.user.controller.UserController.list()
+2019-03-26 15:58:11.298 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vcyber/save],methods=[GET]}" onto public com.vcyber.user.entity.UserEntity com.vcyber.user.controller.UserController.save(com.vcyber.user.entity.UserEntity)
+2019-03-26 15:58:11.298 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vcyber/age]}" onto public java.util.List<com.vcyber.user.entity.UserEntity> com.vcyber.user.controller.UserController.age(int)
+2019-03-26 15:58:11.298 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vcyber/deleteWhere]}" onto public java.lang.String com.vcyber.user.controller.UserController.deleteWhere()
+2019-03-26 15:58:11.299 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vcyber/cutpage]}" onto public java.util.List<com.vcyber.user.entity.UserEntity> com.vcyber.user.controller.UserController.cutPage(int)
+2019-03-26 15:58:11.299 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vcyber/login],methods=[POST]}" onto public com.vcyber.user.util.ResponseData com.vcyber.user.controller.UserController.login(java.lang.String,java.lang.String,java.lang.String)
+2019-03-26 15:58:11.299 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vcyber/{id}],methods=[GET]}" onto public com.vcyber.user.entity.UserEntity com.vcyber.user.controller.UserController.findById(java.lang.Long)
+2019-03-26 15:58:11.301 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-03-26 15:58:11.303 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-03-26 15:58:11.304 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-03-26 15:58:11.305 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-03-26 15:58:11.307 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-26 15:58:11.307 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-26 15:58:11.569 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e7599eb: startup date [Tue Mar 26 15:58:03 CST 2019]; root of context hierarchy
+2019-03-26 15:58:11.623 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-26 15:58:11.624 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-26 15:58:11.658 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-26 15:58:12.117 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-03-26 15:58:12.176 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-03-26 15:58:12.178 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-26 15:58:12.184 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-26 15:58:12.189 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-03-26 15:58:12.189 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-03-26 15:58:12.211 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-03-26 15:58:12.224 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-03-26 15:58:12.380 [restartedMain] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-03-26 15:58:12.391 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-03-26 15:58:12.400 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-8080]
+2019-03-26 15:58:12.413 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-03-26 15:58:12.431 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+2019-03-26 15:58:12.436 [restartedMain] INFO  com.vcyber.UserApplication - Started UserApplication in 9.361 seconds (JVM running for 11.226)
+2019-03-26 15:58:13.002 [pool-1-thread-1] INFO  com.vcyber.user.task.PrintTask - 执行测试cron时间：Tue Mar 26 15:58:13 CST 2019
+2019-03-26 15:58:15.001 [pool-1-thread-1] INFO  com.vcyber.user.task.PrintTask - 执行测试cron时间：Tue Mar 26 15:58:15 CST 2019
+2019-03-26 15:58:17.001 [pool-1-thread-1] INFO  com.vcyber.user.task.PrintTask - 执行测试cron时间：Tue Mar 26 15:58:17 CST 2019
+2019-03-26 15:58:19.000 [pool-1-thread-1] INFO  com.vcyber.user.task.PrintTask - 执行测试cron时间：Tue Mar 26 15:58:19 CST 2019
+2019-03-26 15:58:21.001 [pool-1-thread-1] INFO  com.vcyber.user.task.PrintTask - 执行测试cron时间：Tue Mar 26 15:58:21 CST 2019
+2019-03-26 15:58:22.387 [pool-1-thread-1] INFO  com.vcyber.user.task.PrintTask - 执行测试initialDelay时间：Tue Mar 26 15:58:22 CST 2019

@@ -108,7 +108,7 @@ public class UserController{
     public List<UserEntity> cutPage(int page)
     {
         UserEntity user = new UserEntity();
-        user.setSize(2);
+        user.setSize(5);//每页显示条数
         user.setSord("desc");
         user.setPage(page);
 

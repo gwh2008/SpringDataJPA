@@ -21,16 +21,20 @@ import java.util.List;
 public interface UserJPA extends BaseRepository<UserEntity,Long>
 {
     //查询大于20岁的用户
-    @Query(value = "select * from t_user where t_age > ?1",nativeQuery = true)
+    @Query(value = "select * from t_user where t_age > :age",nativeQuery = true)
     public List<UserEntity> nativeQuery(int age);
 
     //根据用户名、密码删除一条数据
     @Modifying
-    @Query(value = "delete from t_user where t_name = ?1 and t_pwd = ?2",nativeQuery = true)
+    @Query(value = "delete from t_user where t_name = :name and t_pwd = :pwd",nativeQuery = true)
     public void deleteQuery(String name,String pwd);
 
-    @Query(value = "select * from t_user order by t_id  limit  ?1 , ? 2 ",nativeQuery = true)
+    @Query(value = "select * from t_user order by t_id  limit  :start , :row ",nativeQuery = true)
     public List<UserEntity> pageQuery(int start , int row);
 
+    @Query(value = "select * from user where id = :id",nativeQuery = true)
+    UserEntity findOne(Long id);
 
+    @Query(value = "delete from user where id = :userId",nativeQuery = true)
+    void delete(Long userId);
 }

@@ -151,12 +151,10 @@ public class RedisLock {
                 locked = true;
                 return true;
             }
-
             String currentValueStr = this.get(lockKey); //redis里的时间
             if (currentValueStr != null && Long.parseLong(currentValueStr) < System.currentTimeMillis()) {
                 //判断是否为空，不为空的情况下，如果被其他线程设置了值，则第二个条件判断是过不去的
                 // lock is expired
-
                 String oldValueStr = this.getSet(lockKey, expiresStr);
                 //获取上一个锁到期时间，并设置现在的锁到期时间，
                 //只有一个线程才能获取上一个线上的设置时间，因为jedis.getSet是同步的
@@ -181,7 +179,6 @@ public class RedisLock {
         }
         return false;
     }
-
 
     /**
      * Acqurired lock release.

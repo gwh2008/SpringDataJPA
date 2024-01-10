@@ -1,10 +1,6 @@
 package com.vcyber.user.entity;
 
 import com.vcyber.user.base.BaseEntity;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 import javax.persistence.*;
 
 /**
@@ -16,17 +12,13 @@ import javax.persistence.*;
  *
  * ========================
  */
-@Setter
-@Getter
-@ToString
-@EqualsAndHashCode
 @Entity
 @Table(name = "t_user")
 public class UserEntity extends BaseEntity
 {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "t_id")
     private Long id;
 
